@@ -1,10 +1,63 @@
-body {
-	color: white;
-	display: flex;
-	background-size: cover;
-	color: yellow;
+@import "variables";
+.montserratMedium(){
+	font-family: "MonserattMed", Arial, sans-serif;
+	font-weight: 600;
+}
+.montserratBold(){
+	font-family: "Monseratt", Arial, sans-serif;
+	font-weight: 700;
+}
+.montserratSemiBold(){
+	font-family: "Monseratt", Arial, sans-serif;
+	font-weight: 600;
+}
+.montserratRegular(){
+	font-family: "Monseratt", Arial, sans-serif;
+	font-weight: normal;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.btn {
+	padding: 10px 28px;
+
+	background: linear-gradient(to right, #f02c18, #fe5421);
+	font-size: 10px;
+	.montserratSemiBold();
+}
+
+.marked-text {
+	color: @lightenText;
+}
+
+.page {
+	position: relative;
+	padding: 0;
+	margin: 0;
+	line-height: 24px;
+	font-size: @mainFontSize;
+  	.montserratMedium();
+	color: @mainTextColor;
+	background: linear-gradient(to bottom, #141f34, #141f34);
+	height: 5731px;
+}
+.page__layout {
+	z-index: -1;
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	height: calc(100% - 324px);
 	width: 100%;
-	width: 50px;
-	color: green;
-	justify-content: space-around;
+
+	background-image: url(../img/mainBG.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 70% 0, 0 0;
 }
