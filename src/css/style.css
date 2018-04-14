@@ -11,14 +11,40 @@
   margin: -1px;
 }
 .btn {
+  position: relative;
+  width: 170px;
   padding: 10px 28px;
+  font-size: 10px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
   background: -webkit-gradient(linear, left top, right top, from(#f02c18), to(#fe5421));
   background: -webkit-linear-gradient(left, #f02c18, #fe5421);
   background: -moz-linear-gradient(left, #f02c18, #fe5421);
   background: -o-linear-gradient(left, #f02c18, #fe5421);
   background: linear-gradient(to right, #f02c18, #fe5421);
-  font-size: 10px;
-  font-weight: 600;
+  border: none;
+  -webkit-border-radius: 25px;
+     -moz-border-radius: 25px;
+          border-radius: 25px;
+}
+.btn:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+     -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+       -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: block;
+  content: "";
+  width: 180px;
+  height: 40px;
+  -webkit-border-radius: 25px;
+     -moz-border-radius: 25px;
+          border-radius: 25px;
+  border: 1px solid #f8401d;
 }
 .headline {
   padding: 0;
@@ -26,7 +52,8 @@
   font-size: 24px;
   font-weight: 500;
 }
-.headline--examples {
+.headline--examples,
+.headline--request {
   line-height: 34px;
 }
 .marked-text {
@@ -406,4 +433,13 @@
 .slick-dots li:hover,
 .slick-arrow:hover {
   cursor: pointer;
+}
+/* Request Block */
+.request {
+  text-align: center;
+  padding-top: 73px;
+}
+.request__text {
+  margin-top: 18px;
+  margin-bottom: 44px;
 }

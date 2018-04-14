@@ -25,11 +25,27 @@
 }
 
 .btn {
+	position: relative;
+
+	width: 170px;
 	padding: 10px 28px;
 
-	background: linear-gradient(to right, #f02c18, #fe5421);
 	font-size: @mainFontSize - 6px;
 	font-weight: @montserratSemiBold;
+	color: #fff;
+	text-transform: uppercase;
+
+	background: linear-gradient(to right, #f02c18, #fe5421);
+	border: none;
+	border-radius: 25px;
+	
+}
+.btn:after {
+	.centeredItem();
+	width: 180px;
+	height: 40px;
+	border-radius: 25px;
+	border: 1px solid @lightenText;
 }
 .headline {
 	padding: 0;
@@ -37,7 +53,8 @@
 	font-size: @mainFontSize + 8px;
 	font-weight: 500;
 }
-.headline--examples {
+.headline--examples,
+.headline--request {
 	line-height: 34px;
 }
 .marked-text {
@@ -356,4 +373,13 @@
 .slick-dots li:hover,
 .slick-arrow:hover {
 	cursor: pointer;
+}
+/* Request Block */
+.request {
+	text-align: center;
+	padding-top: 73px;
+}
+.request__text {
+	margin-top: 18px;
+	margin-bottom: 44px;
 }
