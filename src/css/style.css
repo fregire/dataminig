@@ -28,6 +28,7 @@
   font-family: "Monseratt", "Arial", sans-serif;
   font-weight: 500;
   color: #ffffff;
+  background-color: #141f34;
   background: -webkit-gradient(linear, left top, left bottom, from(#141f34), to(#141f34));
   background: -webkit-linear-gradient(top, #141f34, #141f34);
   background: -moz-linear-gradient(top, #141f34, #141f34);
@@ -35,7 +36,7 @@
   background: linear-gradient(to bottom, #141f34, #141f34);
   height: 5731px;
 }
-.page__layout {
+.page-layout {
   z-index: -1;
   position: absolute;
   top: 0;
