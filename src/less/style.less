@@ -1,20 +1,11 @@
 @import "variables";
-.montserratMedium(){
-	font-family: "Monseratt", "Arial", sans-serif;
-	font-weight: 500;
+* {
+	box-sizing: border-box;
 }
-.montserratBold(){
+.montserratFont(){
 	font-family: "Monseratt", "Arial", sans-serif;
-	font-weight: 700;
 }
-.montserratSemiBold(){
-	font-family: "Monseratt", "Arial", sans-serif;
-	font-weight: 600;
-}
-.montserratRegular(){
-	font-family: "Monseratt", "Arial", sans-serif;
-	font-weight: normal;
-}
+
 
 .visually-hidden {
   position: absolute;
@@ -29,7 +20,7 @@
 
 	background: linear-gradient(to right, #f02c18, #fe5421);
 	font-size: 10px;
-	.montserratSemiBold();
+	font-weight: @montserratSemiBold;
 }
 
 .marked-text {
@@ -42,7 +33,8 @@
 	margin: 0;
 	line-height: 24px;
 	font-size: @mainFontSize;
-  	.montserratMedium();
+	.montserratFont();
+	font-weight: @montserratMedium;
 	color: @mainTextColor;
 	background-color: #141f34;
 	background: linear-gradient(to bottom, #141f34, #141f34);
@@ -62,6 +54,43 @@
 	background-size: cover;
 	background-position: 70% 0, 0 0;
 }
-.page-layout__header {
+
+/* Header block */
+.header {
+	font-weight: @montserratBold;
+}
+.header__inner {
+	max-width: 320px;
+	padding: 0 10px;
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header__phone-icon {
+	position: relative;
+
+	width: 25px;
+	height: 25px;
+
+	border: 1px solid @lightenText;
+	border-radius: 50%;
+}
+
+.header__phone-icon:after {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	
+	content: "";
+	display: block;
+	width: 13px;
+	height: 13px;
+
+	background: url(../img/phone-icon.svg) no-repeat;
+}
+/* Block logo */
+.logo {
+	font-size: 12px;
 }

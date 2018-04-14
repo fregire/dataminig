@@ -1,3 +1,8 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -13,7 +18,6 @@
   background: -o-linear-gradient(left, #f02c18, #fe5421);
   background: linear-gradient(to right, #f02c18, #fe5421);
   font-size: 10px;
-  font-family: "Monseratt", "Arial", sans-serif;
   font-weight: 600;
 }
 .marked-text {
@@ -52,4 +56,56 @@
        -o-background-size: cover;
           background-size: cover;
   background-position: 70% 0, 0 0;
+}
+/* Header block */
+.header {
+  font-weight: 700;
+}
+.header__inner {
+  max-width: 320px;
+  padding: 0 10px;
+  height: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__phone-icon {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #f8401d;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+}
+.header__phone-icon:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+     -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+       -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  content: "";
+  display: block;
+  width: 13px;
+  height: 13px;
+  background: url(../img/phone-icon.svg) no-repeat;
+}
+/* Block logo */
+.logo {
+  font-size: 12px;
 }
