@@ -6,6 +6,15 @@
 	font-family: "Monseratt", "Arial", sans-serif;
 }
 
+.centeredItem(){
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	display: block;
+	content: "";
+}
 
 .visually-hidden {
   position: absolute;
@@ -79,13 +88,8 @@
 }
 
 .header__phone-icon:after {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	
-	content: "";
-	display: block;
+	.centeredItem();
+
 	width: 13px;
 	height: 13px;
 
@@ -114,3 +118,46 @@
 	white-space: nowrap;
 }
 /* Block - adv */
+.adv__inner {
+	max-width: 320px;
+	padding: 0 10px;
+	padding-top: 40px;
+}
+.adv__phrase {
+	padding: 0;
+	margin: 0;
+}
+.adv__pharse--main {
+	margin-top: 18px;
+
+	font-size: 24px;
+	line-height: 36px;
+}
+
+.adv__items {
+	margin-top: 35px;
+
+	color: #000;
+}
+.adv__item {
+	position: relative;
+
+	width: auto;
+	height: 127px;
+	margin-bottom: 20px;
+
+	line-height: 20.46px;
+
+	border-radius: 6px;
+	background: #fff;
+}
+.adv__item--active {
+	color: #fff;
+
+	background: #d53c22 url(../img/adv-bg.jpg) no-repeat;
+	background-position: center center;
+}
+
+.adv__content {
+	.centeredItem();
+}
