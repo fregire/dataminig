@@ -48,11 +48,15 @@
 	position: relative;
 	padding: 0;
 	margin: 0;
+	min-height: 100%;
+
 	line-height: 24px;
 	font-size: @mainFontSize;
 	.montserratFont();
 	font-weight: @montserratMedium;
 	color: @mainTextColor;
+
+	overflow-x: hidden;
 	background-color: #141f34;
 	background: linear-gradient(to bottom, #141f34, #141f34);
 	height: 5731px;
@@ -217,11 +221,12 @@
 	padding-bottom: 70px;
 }
 .examples__item {
+	margin: 0 10px;
 	font-size: 14px;
 	line-height: 18px;
 	font-weight: 600;
 	color: #000;
-	
+
 	border-radius: 8px;
 	background: #fff;
 }
@@ -295,10 +300,10 @@
 	outline: none;
 }
 .slick-next {
-	right: 0;
+	right: 20px;
 }
 .slick-prev {
-	left: 0;
+	left: 20px;
 	
 }
 .arrow {
@@ -317,4 +322,38 @@
 .arrow--prev,
 .arrow--next {
 	background-repeat: no-repeat;
+}
+/* TODO : Пангинацию */
+.slick-dots {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+
+	padding: 0;
+	margin: 0;
+	height: 40px;
+	display: flex;
+	align-items: center;
+
+	list-style: none;
+}
+.slick-dots li button {
+	display: none;
+}
+.slick-dots li {
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+	margin: 0 5px;
+
+	border-radius: 50%;
+	background: #fff;
+}
+.slick-dots li.slick-active {
+	background: @lightenText;
+}
+.slick-dots li:hover,
+.slick-arrow:hover {
+	cursor: pointer;
 }
