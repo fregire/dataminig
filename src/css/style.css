@@ -165,6 +165,10 @@
   color: #fff;
   background: #d53c22 url(../img/adv-bg.jpg) no-repeat;
   background-position: center center;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
 }
 .adv__item--active .adv__icon {
   border: none;
@@ -314,10 +318,44 @@
 .slick-arrow {
   position: absolute;
   bottom: 0;
+  width: 40px;
+  height: 40px;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+  background: transparent;
+  border: 1px solid #ff8080;
+  outline: none;
 }
 .slick-next {
   right: 0;
 }
 .slick-prev {
   left: 0;
+}
+.arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+     -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+       -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: block;
+  content: "";
+  width: 11px;
+  height: 18px;
+}
+.arrow--prev {
+  background: url(../img/arrow_prev.png);
+  left: 45%;
+}
+.arrow--next {
+  background: url(../img/arrow_next.png);
+  right: 45%;
+}
+.arrow--prev,
+.arrow--next {
+  background-repeat: no-repeat;
 }

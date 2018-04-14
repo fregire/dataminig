@@ -159,6 +159,7 @@
 
 	background: #d53c22 url(../img/adv-bg.jpg) no-repeat;
 	background-position: center center;
+	background-size: cover;
 }
 .adv__item--active .adv__icon {
 	border: none;
@@ -284,10 +285,36 @@
 .slick-arrow {
 	position: absolute;
 	bottom: 0;
+
+	width: 40px;
+	height: 40px;
+
+	border-radius: 50%;
+	background: transparent;
+	border: 1px solid #ff8080;
+	outline: none;
 }
 .slick-next {
 	right: 0;
 }
 .slick-prev {
 	left: 0;
+	
+}
+.arrow {
+	.centeredItem();
+	width: 11px;
+	height: 18px;
+}
+.arrow--prev {
+	background: url(../img/arrow_prev.png);
+	left: 45%;
+}
+.arrow--next {
+	background: url(../img/arrow_next.png);
+	right: 45%;
+}
+.arrow--prev,
+.arrow--next {
+	background-repeat: no-repeat;
 }
