@@ -32,7 +32,10 @@
 	font-weight: @montserratSemiBold;
 }
 .headline {
+	padding: 0;
+	margin: 0;
 	font-size: @mainFontSize + 8px;
+	font-weight: 500;
 }
 .marked-text {
 	color: @lightenText;
@@ -72,7 +75,6 @@
 	padding-top: 9px;
 }
 .header__inner {
-	max-width: 320px;
 	padding: 0 10px;
 	height: 25px;
 	display: flex;
@@ -104,7 +106,6 @@
 }
 /* Block - main */
 .main__inner {
-	max-width: 320px;
 	padding: 0 10px;
 }
 .main__top-text {
@@ -120,9 +121,8 @@
 }
 /* Block - adv */
 .adv__inner {
-	max-width: 320px;
 	padding: 0 10px;
-	padding-top: 40px;
+	padding-top: 62px;
 }
 .adv__phrase {
 	padding: 0;
@@ -143,7 +143,7 @@
 	position: relative;
 
 	width: auto;
-	height: 127px;
+	height: 126px;
 	margin-bottom: 20px;
 
 	line-height: 20.46px;
@@ -157,7 +157,50 @@
 	background: #d53c22 url(../img/adv-bg.jpg) no-repeat;
 	background-position: center center;
 }
+.adv__item--active .adv__icon {
+	border: none;
+}
+.adv__icon {
+	position: relative;
+	top: 50%;
+	left: 38px;
+	transform: translate(0, -50%);
 
-.adv__content {
+	width: 58px;
+	height: 58px;
+	flex: 1;
+	background: #fff;
+	border-radius: 50%;	
+	border: 2px solid @lightenText;
+}
+.adv__text {
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	padding-left: 126px;
+	padding-right: 39px;
+}
+/* Block - icon */
+.icon {
 	.centeredItem();
+	width: 27px;
+	height: 27px;
+	
+	background-size: 27px;
+	background-repeat: no-repeat;
+	
+}
+.icon--prices {
+	background-image: url(../img/price-icon.svg);
+}
+.icon--delivery {
+	background-image: url(../img/delivery-icon.svg);
+}
+.icon--support {
+	background-image: url(../img/support-icon.svg);
+}
+
+/* Block - examples */
+.examples__inner {
+	padding: 0 10px;
 }

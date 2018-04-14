@@ -21,7 +21,10 @@
   font-weight: 600;
 }
 .headline {
+  padding: 0;
+  margin: 0;
   font-size: 24px;
+  font-weight: 500;
 }
 .marked-text {
   color: #f8401d;
@@ -66,7 +69,6 @@
   padding-top: 9px;
 }
 .header__inner {
-  max-width: 320px;
   padding: 0 10px;
   height: 25px;
   display: -webkit-box;
@@ -116,7 +118,6 @@
 }
 /* Block - main */
 .main__inner {
-  max-width: 320px;
   padding: 0 10px;
 }
 .main__top-text {
@@ -131,9 +132,8 @@
 }
 /* Block - adv */
 .adv__inner {
-  max-width: 320px;
   padding: 0 10px;
-  padding-top: 40px;
+  padding-top: 62px;
 }
 .adv__phrase {
   padding: 0;
@@ -150,7 +150,7 @@
 .adv__item {
   position: relative;
   width: auto;
-  height: 127px;
+  height: 126px;
   margin-bottom: 20px;
   line-height: 20.46px;
   -webkit-border-radius: 6px;
@@ -163,7 +163,44 @@
   background: #d53c22 url(../img/adv-bg.jpg) no-repeat;
   background-position: center center;
 }
-.adv__content {
+.adv__item--active .adv__icon {
+  border: none;
+}
+.adv__icon {
+  position: relative;
+  top: 50%;
+  left: 38px;
+  -webkit-transform: translate(0, -50%);
+     -moz-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+       -o-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  width: 58px;
+  height: 58px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+     -moz-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background: #fff;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+  border: 2px solid #f8401d;
+}
+.adv__text {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+     -moz-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+       -o-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  padding-left: 126px;
+  padding-right: 39px;
+}
+/* Block - icon */
+.icon {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -174,4 +211,24 @@
           transform: translate(-50%, -50%);
   display: block;
   content: "";
+  width: 27px;
+  height: 27px;
+  -webkit-background-size: 27px 27px;
+     -moz-background-size: 27px;
+       -o-background-size: 27px;
+          background-size: 27px;
+  background-repeat: no-repeat;
+}
+.icon--prices {
+  background-image: url(../img/price-icon.svg);
+}
+.icon--delivery {
+  background-image: url(../img/delivery-icon.svg);
+}
+.icon--support {
+  background-image: url(../img/support-icon.svg);
+}
+/* Block - examples */
+.examples__inner {
+  padding: 0 10px;
 }
