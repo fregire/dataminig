@@ -546,3 +546,23 @@
   max-width: 100%;
   height: 100%;
 }
+/* Block - benefits */
+.benefits {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.benefits__item {
+  height: 245px;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+}
+.benefits__top-content {
+  height: 96px;
+  background: #f8401d url(../img/benefits-bg.jpg) no-repeat;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
