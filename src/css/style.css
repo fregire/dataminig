@@ -463,8 +463,8 @@
 }
 .video-slider__slides {
   position: relative;
-  padding: 0 10px;
   padding-bottom: 70px;
+  margin-top: 14px;
 }
 .video-slider__slides .slick-slide {
   display: -webkit-box!important;
@@ -472,6 +472,7 @@
   display: -moz-box!important;
   display: -ms-flexbox!important;
   display: flex!important;
+  margin: 0 10px;
 }
 .video-slider__slide {
   display: -webkit-box;
