@@ -12,7 +12,7 @@
 }
 .input {
   height: 30px;
-  padding: 0 18px;
+  padding: 0 15px;
   width: 100%;
   line-height: 30px;
   font-size: 12px;
@@ -766,3 +766,29 @@
   display: inline-block;
   vertical-align: middle;
 }
+/* Block - feedback */
+.feedback__inner {
+  padding: 0 23px;
+  padding-top: 58px;
+  padding-bottom: 54px;
+}
+.feedback__headline {
+  margin-bottom: 35px;
+  font-size: 20px;
+  font-weight: normal;
+  white-space: nowrap;
+  line-height: 34px;
+}
+.feedback__form {
+  text-align: center;
+}
+.feedback__input {
+  margin-bottom: 19px;
+}
+.feedback__input:nth-child(6) {
+  margin-bottom: 29px;
+}
+.feedback__input--textarea {
+  margin-bottom: 28px;
+}
+/* Block - footer */
