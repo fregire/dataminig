@@ -15,7 +15,10 @@
 	display: block;
 	content: "";
 }
-
+.link {
+	color: #fff;
+	text-decoration: none;
+}
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -127,7 +130,6 @@
 	overflow-x: hidden;
 	background-color: #141f34;
 	background: linear-gradient(to bottom, #141f34, #141f34);
-	height: 5731px;
 }
 .page-layout {
 	z-index: -1;
@@ -178,6 +180,9 @@
 .logo {
 	font-size: @mainFontSize - 4px;
 	line-height: 25px;
+}
+.logo--footer {
+	font-size: 20px;
 }
 /* Block - main */
 .main__inner {
@@ -704,3 +709,89 @@
 }
 
 /* Block - footer */
+.footer {
+	background: #1d1d21;
+}
+.footer__inner {
+	padding: 0 10px;
+	padding-left: 45px;
+}
+.footer__logo {
+	padding-top: 36px;
+	margin-bottom: 40px;
+
+	font-weight: 700;
+}
+.footer__address {
+	padding-left: 36px;
+	margin-bottom: 20px;
+	font-style: normal;
+
+	background-repeat: no-repeat;
+	background-position: 0 3px;
+	background-size: 15px;
+}
+.footer__address--phone {
+	font-size: @mainFontSize;
+	font-weight: 700;
+
+	background-image: url(../img/phone-red-icon.svg);
+}
+.footer__address--mail {
+	margin-bottom: 16px;
+	font-size: 14px;
+	font-weight: normal;
+
+	background-image: url(../img/mail-icon.svg);
+	background-position: 0 6px;
+}
+/* Block - social */
+.social {
+	display: flex;
+}
+.social__link {
+	display: flex;
+	align-items: center;
+	margin-right: 36px;
+}
+.social__icon {
+	position: relative;
+
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	margin-right: 10px;
+
+	background: #fff;
+	border-radius: 50%;
+}
+.social__icon:after {
+	.centeredItem();
+	width: 15px;
+	height: 9px;
+	background-color: transparent;
+	background-position: center center;
+	background-size: 15px;
+}
+
+.social__icon--vk:after {
+	background-image: url(../img/vk-icon.svg);
+}
+.social__icon--telegram:after {
+	height: 13px;
+	background-image: url(../img/telegram-icon.svg);
+}
+
+/* Block - copyright */
+.copyright {
+	height: 68px;
+	margin-top: 10px;
+
+	line-height: 68px;
+	text-align: center;
+	font-weight: normal;
+	font-size: 14px;
+	color: #6f6f74;
+
+	border-top: 1px solid #343438;
+}
