@@ -10,6 +10,50 @@
   height: 1px;
   margin: -1px;
 }
+.input {
+  height: 30px;
+  padding: 0 18px;
+  width: 100%;
+  line-height: 30px;
+  font-size: 12px;
+  background-color: rgba(255, 255, 255, 0.169);
+  border: 1px solid #b0b4ba;
+  -webkit-border-radius: 20px;
+     -moz-border-radius: 20px;
+          border-radius: 20px;
+}
+.input--textarea {
+  height: 127px;
+  padding-top: 10px;
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px;
+  resize: none;
+}
+.input::-webkit-input-placeholder {
+  color: #a1a5ae;
+  font-size: 12px;
+  font-family: "Monseratt", "Arial", sans-serif;
+  line-height: 18px;
+}
+.input::-moz-placeholder {
+  color: #a1a5ae;
+  font-size: 12px;
+  font-family: "Monseratt", "Arial", sans-serif;
+  line-height: 18px;
+}
+.input:-moz-placeholder {
+  color: #a1a5ae;
+  font-size: 12px;
+  font-family: "Monseratt", "Arial", sans-serif;
+  line-height: 18px;
+}
+.input:-ms-input-placeholder {
+  color: #a1a5ae;
+  font-size: 12px;
+  font-family: "Monseratt", "Arial", sans-serif;
+  line-height: 18px;
+}
 .btn {
   position: relative;
   width: 170px;
