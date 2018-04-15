@@ -554,22 +554,32 @@
 /* Block - arrange */
 .arrange__inner {
 	padding: 0 10px;
-	padding-top: 75px;
+	padding-top: 66px;
 }
 .arrange__header {
+	padding-left: 12px;
+	margin-bottom: 57px;
+
 	line-height: 34px;
 }
 .arrange__list {
 	padding: 0;
+	margin: 0;
 }
 .arrange__item {
 	white-space: nowrap;
-	margin-top: 32px;
+	margin-top: 22px;
+}
+.arrange__item:first-child {
+	margin-top: 0;
+}
+.arrange__item:last-child {
+	margin-top: 30px;
 }
 .arrange__text {
 	font-weight: normal;
 	margin: 0;
-	padding-left: 25px;
+	padding-left: 22px;
 }
 .arrange__number {
 	position: relative;
@@ -592,6 +602,24 @@
 	line-height: 58px;
 	font-size: 41.69px;
 	font-weight: 700;
+}
+.arrange__number span:after {
+	position: absolute;
+	top: 100%;
+	left: 50%;
+
+	width: 1px;
+	height: 68px;
+	content: "";
+	display: block;
+
+	background: @lightenText;
+}
+.arrange__number--last span:after {
+	display: none;
+}
+.arrange__number--middle span:after{
+	height: 75px;
 }
 
 .arrange__number,
