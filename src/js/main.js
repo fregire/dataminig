@@ -14,10 +14,16 @@ $(document).ready(function() {
     		}
     	},
     	{
-    		breakpoint: 900,
+    		breakpoint: 1000,
     		settings: {
     			slidesToShow: 2,
     			centerMode: true
+    		}
+    	},
+    	{
+    		breakpoint: 1200,
+    		settings: {
+    			slidesToShow: 3
     		}
     	}
     ]
