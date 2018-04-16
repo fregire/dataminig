@@ -1,0 +1,57 @@
+@largePhones: 480px;
+@tablets: 750px;
+@laptop: 1024px;
+
+
+@media (min-width: @largePhones) {
+	.page-layout {
+		background-image: url(../img/mainBG-desktop.jpg);
+		background-size: contain;
+	}
+	.input {
+		height: 45px;
+		border-radius: 30px;
+	}
+	.input--textarea {
+		height: 300px;
+		border-radius: 20px;
+	}
+
+	/* Video block */
+	.video-slider__player {
+		height: 300px;
+	}
+	.video-slider__item {
+		height: 180px;
+	}
+	.video-slider__preview {
+		width: 100%;
+	}
+	/* Block - benefits */
+	.benefits__item {
+		width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	/* Block - arrange */
+	.arrange__item {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+
+		list-style: none;
+	}
+	.arrange__item br:nth-child(3),
+	.arrange__item br:nth-child(1) {
+		display: none;
+	}
+	.arrange__text {
+		width: 80%;
+	}
+
+	/* Social block */
+	.social {
+		justify-content: space-around;
+	}
+}
