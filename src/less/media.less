@@ -1,6 +1,7 @@
 @largePhones: 480px;
 @tablets: 750px;
 @laptop: 1000px;
+@desktop: 1200px;
 
 
 @media (min-width: @largePhones) {
@@ -153,7 +154,7 @@
 		overflow-x: visible;
 	}
 	.page-layout {
-		background-size: 1100px;
+		background-size: cover;
 	}
 	.headline {
 		font-size: 30px;
@@ -370,4 +371,92 @@
 	}
 
 	/* TODO - внести блок один в другой, закончить секцию на 1000px*/
+}
+
+@media screen and (min-width: @desktop) {
+	.slick-prev,
+	.header__inner,
+	.main__inner,
+	.adv__inner,
+	.examples__inner,
+	.request__inner,
+	.arrange__inner,
+	.process__inner,
+	.feedback__inner,
+	.footer__inner,
+	.examples__slider  {
+		max-width: 1170px;
+		margin: 0 auto;
+		padding: 0;
+	}
+	.page-layout {
+		background-size: cover;
+		background-position: center center;
+	}
+	.headline {
+		font-size: 48px;
+		line-height: 60px;
+	}
+	.btn--main {
+		font-size: 14px;
+		width: 25%;
+		padding: 18px 25px;
+	}
+	.btn--main:after {
+		width: 105%;
+		height: 65px;
+		border-radius: 31px;
+
+
+	}
+	/* header */
+	.header__inner {
+		height: 116px;
+	}
+	.header__logo,
+	.header__phone {
+		font-size: 20px;
+		padding: 0;
+	}
+	/* Block - main */
+	.main__top-text {
+		font-size: 20px;
+		font-weight: normal;
+
+		margin-top: 93px;
+	}
+	.main__action {
+		margin-top: 88px;
+	}
+	.main__bottom-text {
+		font-size: 16px;
+	}
+	/*adv */
+	.adv__inner {
+		padding-top: 318px;
+	}
+	.adv__phrase {
+		font-size: 20px;
+	}
+	.adv__pharse--main .marked-text {
+		color: white;
+	}
+	.adv__items {
+		margin-top: 70px;
+	}
+	.adv__item {
+		height: 159px;
+	}
+	/* examples */
+	.examples__headline {
+		margin-top: 110px;
+		margin-bottom: 70px;
+	}
+	.examples .slick-arrow {
+		top: -115px;
+	}
+	.examples__item {
+		height: 447px!important;
+	}
+
 }
