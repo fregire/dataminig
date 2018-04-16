@@ -141,6 +141,10 @@
 	.benefits__item:nth-child(1) {
 		margin-top: 20px;
 	}
+	/* Block - video */
+	.video-slider__item {
+		height: 180px;
+	}
 }
 
 @media (min-width: @laptop) {
@@ -151,15 +155,84 @@
 	.headline {
 		font-size: 30px;
 	}
+	.btn--main {
+		width: 280px;
+	}
+	.btn--main:after {
+		width: 290px;
+	}
+	/* Header */
+	.header__phone-number {
+		display: inline-block;
+	}
+	.header__phone-icon {
+		border: none;
+	}
+	.header__phone-icon:after {
+		width: 20px;
+		height: 20px;
+		background-image: url(../img/phone-red-icon.svg);
+		background-size: 20px;
+	}
 	.header__inner {
 		height: 50px;
+	}
+	/* Main */
+	.main__top-text {
+		margin-top: 141px;
+	}
+	.main__action {
+		margin-top: 93px;
+	}
+	/* Adv */
+	.adv__inner {
+		padding-top: 311px;
 	}
 	.adv__items {
 		display: flex;
 		justify-content: space-between; 
+		margin-top: 80px;
 	}
 	.adv__item {
 		width: 32%;
+	}
+	/* Examples */
+	.examples__headline {
+		margin-top: 130px;
+	}
+	.examples .slick-list {
+		overflow: hidden!important;
+	}
+	.examples__item {
+		margin: 14px 0;
+		height: 443px;
+		display: flex!important;
+		padding: 28px 30px;
+		justify-content: space-between;
+		align-items: stretch;
+		background: linear-gradient(45deg, red 0, red 35%, white 35%);
+	}
+	/* Product */
+	.product {
+
+	}
+	.product__picture {
+		height: 80%;
+		width: 40%;
+		position: static;
+		background: transparent;
+	}
+	.product__img {
+		top: 0;
+		max-width: 300px;
+	}
+	.product__content {
+		width: 51.41987829614604%;
+	}
+	.product__name {
+		font-size: 36px;
+		margin-bottom: 58px;
+		padding-bottom: 0;
 	}
 	.header__inner,
 	.main__inner,
@@ -169,7 +242,8 @@
 	.arrange__inner,
 	.process__inner,
 	.feedback__inner,
-	.footer__inner {
+	.footer__inner,
+	.examples__slider  {
 		max-width: 950px;
 		margin: 0 auto;
 	}

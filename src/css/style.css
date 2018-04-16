@@ -179,6 +179,14 @@ html {
       -ms-flex-align: center;
           align-items: center;
 }
+.header__phone-icon,
+.header__phone-number {
+  display: inline-block;
+  vertical-align: middle;
+}
+.header__phone-number {
+  display: none;
+}
 .header__phone-icon {
   position: relative;
   width: 25px;
@@ -232,10 +240,9 @@ html {
      -moz-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 80px;
 }
 .main__bottom-text {
-  padding-left: 110px;
+  padding-left: 114px;
   font-size: 10px;
   font-weight: normal;
 }
