@@ -152,6 +152,9 @@
 		width: 100%;
 		overflow-x: visible;
 	}
+	.page-layout {
+		background-size: 1100px;
+	}
 	.headline {
 		font-size: 30px;
 	}
@@ -199,6 +202,7 @@
 	/* Examples */
 	.examples__headline {
 		margin-top: 130px;
+		margin-bottom: 108px;
 	}
 	.examples .slick-list {
 		overflow: hidden!important;
@@ -212,10 +216,33 @@
 		align-items: stretch;
 		background: linear-gradient(45deg, red 0, red 35%, white 35%);
 	}
-	/* Product */
-	.product {
+	.examples__slider .slick-arrow {
+		top: -120px;
+		left: auto;
+		transform: rotate(90deg);
 
+		width: 50px;
+		height: 50px;
 	}
+	.examples__slider .slick-next {
+		right: 80px;
+	}
+	.examples__slider .slick-prev {
+		right: 0;
+	}
+	.examples__slider .arrow {
+		width: 18px;
+		height: 25px;
+		background-size: 15px;
+	}
+	.examples__slider .slick-prev i {
+		left: 50%;
+	}
+	.examples__slider .slick-next i {
+		top: 50%;
+		left: 55%;
+	}
+	/* Product */
 	.product__picture {
 		height: 80%;
 		width: 40%;
@@ -234,6 +261,84 @@
 		margin-bottom: 58px;
 		padding-bottom: 0;
 	}
+	/*request */
+	.request br {
+		display: none;
+	}
+	.request__headline {
+		margin-bottom: 66px;
+	}
+	.request__text {
+		width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	/* Arrange */
+	.arrange {
+		display: flex;
+	}
+	.arrange__header {
+		margin-bottom: 140px;
+	}
+	.arrange__item,
+	.arrange__item:last-child {
+		margin: 0;
+		margin-top: 120px;
+	}
+	.arrange__number span:after {
+		height: 165px;
+	}
+	.input {
+		width: 80%;
+	}
+	.feedback__headline {
+		padding-left: 10%;
+		font-size: 20px;
+		white-space: normal;
+		margin-top: 120px;
+	}
+	.feedback__headline .marked-text {
+		color: #fff;
+	}
+	.feedback__headline br {
+		display: none;
+	}
+	.feedback__headline br:first-child {
+		display: block;
+	}
+	/* video */
+	.video-slider__player {
+		height: 400px;
+	}
+	/* social */
+	.social {
+		justify-content: flex-start;
+	}
+	/* footer */
+	.footer__inner {
+		height: 173px;
+		display: flex;
+		justify-content: space-between;
+	}
+	.footer__contacts {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		order: 1;
+	}
+	.footer__address {
+		display: block;
+		width: auto;
+		margin-bottom: 0;
+	}
+	.footer__address:last-child {
+		margin-top: 32px;
+	}
+	.footer__logo {
+		line-height: 173px;
+		padding: 0;
+	}
+	.slick-prev,
 	.header__inner,
 	.main__inner,
 	.adv__inner,

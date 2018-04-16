@@ -12,7 +12,8 @@ $(document).ready(function() {
 	    		settings: {
 	    			slidesToShow: 2,
 	    			centerMode: true,
-	    			vertical: false
+	    			vertical: false,
+	    			dots: true
 	    		}
 	    	},
 	    	{
@@ -20,14 +21,24 @@ $(document).ready(function() {
 	    		settings: {
 	    			slidesToShow: 1,
 	    			centerMode: true,
-	    			vertical: false
+	    			vertical: false,
+	    			dots: true
+	    		}
+	    	},
+	    	{
+	    		breakpoint: 480,
+	    		settings: {
+	    			slidesToShow: 1,
+	    			centerMode: false,
+	    			vertical: false,
 	    		}
 	    	}
 
     	],
     	slidesToShow: 3,
     	vertical: true,
-    	centerMode: false
+    	centerMode: false,
+    	dots: false
 	});
 
 	// Активация слайдера трансляций

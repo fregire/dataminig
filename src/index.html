@@ -103,7 +103,10 @@
 				</div>
 				<div class="examples__item product">
 					<div class="product__picture">
-						<img src="img/product_1.png" alt="Продукт №1" class="product__img">
+						<picture>
+							<source media="(min-width: 1000px)" srcset="img/product_1x2.png">
+							<img  class="product__img" src="img/product_1.png" alt="">
+						</picture>
 					</div>
 					<div class="product__content">
 						<h3 class="product__name">AntMiner <span class="marked-text">L3</span></h3>
@@ -129,7 +132,10 @@
 				</div>
 				<div class="examples__item product">
 					<div class="product__picture">
-						<img src="img/product_1.png" alt="Продукт №1" class="product__img">
+						<picture>
+							<source media="(min-width: 1000px)" srcset="img/product_1x2.png">
+							<img  class="product__img" src="img/product_1.png" alt="">
+						</picture>
 					</div>
 					<div class="product__content">
 						<h3 class="product__name">AntMiner <span class="marked-text">L3</span></h3>
@@ -155,7 +161,10 @@
 				</div>
 				<div class="examples__item product">
 					<div class="product__picture">
-						<img src="img/product_1.png" alt="Продукт №1" class="product__img">
+						<picture>
+							<source media="(min-width: 1000px)" srcset="img/product_1x2.png">
+							<img  class="product__img" src="img/product_1.png" alt="">
+						</picture>
 					</div>
 					<div class="product__content">
 						<h3 class="product__name">AntMiner <span class="marked-text">L3</span></h3>
@@ -183,7 +192,7 @@
 		</section>
 		<section class="request">
 			<div class="request__inner">
-				<h2 class="headline headline--request">У вас есть <br>свое оборудование?</h2>
+				<h2 class="request__headline headline headline--request">У вас есть <br>свое оборудование?</h2>
 				<p class="request__text">Если вы хотите разместить другое <br>оборудование, оставьте заявку. <br>Мы обязательно ответим.</p>
 				<button class="btn">Оставить заявку</button>
 			</div>
@@ -392,50 +401,53 @@
 			
 		</section>
 		<section class="arrange">
-			<div class="arrange__inner">
-				<h2 class="arrange__header headline"><span class="marked-text">Как разместить </span><br>ваше оборудование?</h2>
-				<ul class="arrange__list">
-					<li class="arrange__item">
-						<div class="arrange__number"><span>1</span></div>
-						<p class="arrange__text">Заполните форму <br>на сайте <br>или позвоните нам</p>
-					</li>
-					<li class="arrange__item">
-						<div class="arrange__number arrange__number--middle"><span>2</span></div>
-						<p class="arrange__text">Обсуждаем <br>условия доставки <br>и размещения <br>оборудования</p>
-					</li>
-					<li class="arrange__item">
-						<div class="arrange__number arrange__number--last"><span>3</span></div>
-						<p class="arrange__text">Доставляем <br>и устанавливаем <br>ваше оборудование <br>в Дата-центре.</p>
-					</li>
-				</ul>
-			</div>
-		</section>
-		<section class="feedback">
-			<div class="feedback__inner">
-				<h2 class="feedback__headline headline">Начните размещение <br>своего оборудования <br><span class="marked-text">с отправки заявки</span></h2>
-			
-				<form action="" class="feedback__form">
-					<label for="company" class="visually-hidden">Введите название компании</label>
-					<input class="feedback__input input" id="company" type="text" placeholder="Компания">
+				<div class="arrange__inner">
+					<h2 class="arrange__header headline"><span class="marked-text">Как разместить </span><br>ваше оборудование?</h2>
+					<ul class="arrange__list">
+						<li class="arrange__item">
+							<div class="arrange__number"><span>1</span></div>
+							<p class="arrange__text">Заполните форму <br>на сайте <br>или позвоните нам</p>
+						</li>
+						<li class="arrange__item">
+							<div class="arrange__number arrange__number--middle"><span>2</span></div>
+							<p class="arrange__text">Обсуждаем <br>условия доставки <br>и размещения <br>оборудования</p>
+						</li>
+						<li class="arrange__item">
+							<div class="arrange__number arrange__number--last"><span>3</span></div>
+							<p class="arrange__text">Доставляем <br>и устанавливаем <br>ваше оборудование <br>в Дата-центре.</p>
+						</li>
+					</ul>
+				</div>
+				<div class="feedback">
+					<div class="feedback__inner">
+						<h2 class="feedback__headline headline">Начните размещение <br>своего оборудования <br><span class="marked-text">с отправки заявки</span></h2>
+					
+						<form action="" class="feedback__form">
+							<label for="company" class="visually-hidden">Введите название компании</label>
+							<input class="feedback__input input" id="company" type="text" placeholder="Компания">
 
-					<label for="phone" class="visually-hidden">Введите ваш телефон</label>
-					<input class="feedback__input input" id="phone" type="text" placeholder="Телефон">
+							<label for="phone" class="visually-hidden">Введите ваш телефон</label>
+							<input class="feedback__input input" id="phone" type="text" placeholder="Телефон">
 
-					<label for="email" class="visually-hidden">Введите вашу почту</label>
-					<input class="feedback__input input" id="email" type="text" placeholder="E-mail">
+							<label for="email" class="visually-hidden">Введите вашу почту</label>
+							<input class="feedback__input input" id="email" type="text" placeholder="E-mail">
 
-					<label for="text-field" class="visually-hidden">Укажите размещаемое оборудование и его номинальную мощность</label>
-					<textarea class="feedback__input feedback__input--textarea input input--textarea" id="text-field" type="textarea" placeholder="Укажите размещаемое оборудование и его номинальную мощность"></textarea>
-					<button class="btn btn--request">Отправить заявку</button>
-				</form>
+							<label for="text-field" class="visually-hidden">Укажите размещаемое оборудование и его номинальную мощность</label>
+							<textarea class="feedback__input feedback__input--textarea input input--textarea" id="text-field" type="textarea" placeholder="Укажите размещаемое оборудование и его номинальную мощность"></textarea>
+							<button class="btn btn--request">Отправить заявку</button>
+						</form>
+					</div>
 			</div>
 		</section>
 	</main>
 	<footer class="footer">
 		<div class="footer__inner">
 				<div class="footer__logo logo logo--footer">Mining-Hotel</div>
-				<address class="footer__address footer__address--phone"><a class="link" href="tel:88000000000">8 800 000 00 00</a></address>
-				<address class="footer__address footer__address--mail"><a class="link" href="mailto:mining-hotel.io@gmail.com">mining-hotel.io@gmail.com</a></address>
+				<div class="footer__contacts">
+					<address class="footer__address footer__address--phone"><a class="link" href="tel:88000000000">8 800 000 00 00</a></address>
+					<address class="footer__address footer__address--mail"><a class="link" href="mailto:mining-hotel.io@gmail.com">mining-hotel.io@gmail.com</a></address>
+				</div>
+				
 				<div class="social">
 					<a class="social__link link" href="#">
 						<i class="social__icon social__icon--vk"></i>
