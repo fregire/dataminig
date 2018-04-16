@@ -152,6 +152,10 @@
   }
 }
 @media (min-width: 1000px) {
+  html {
+    width: 100%;
+    overflow-x: visible;
+  }
   .headline {
     font-size: 30px;
   }
@@ -213,4 +217,5 @@
   .process__text br:first-child {
     display: none;
   }
+  /* TODO - внести блок один в другой, закончить секцию на 1000px*/
 }
