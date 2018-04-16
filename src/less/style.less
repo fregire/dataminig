@@ -95,12 +95,17 @@ html {
 	border-radius: 25px;
 	
 }
+
+
 .btn:after {
 	.centeredItem();
 	width: 180px;
 	height: 40px;
 	border-radius: 25px;
 	border: 1px solid @lightenText;
+}
+.btn--main:after {
+	width: 290px;
 }
 .btn:hover {
 	cursor: pointer;
@@ -118,13 +123,15 @@ html {
 .marked-text {
 	color: @lightenText;
 }
+.marked-text--price {
+	font-weight: 700;
+}
 
 .page {
 	position: relative;
 	padding: 0;
 	margin: 0;
 	min-height: 100%;
-	width: 100%;
 
 	line-height: 24px;
 	font-size: @mainFontSize;
@@ -203,6 +210,17 @@ html {
 	font-weight: 500;
 	line-height: 34px;
 	white-space: nowrap;
+}
+.main__action {
+	display: none;
+	align-items: center;
+	margin-top: 80px;
+}
+.main__bottom-text {
+	padding-left: 110px;
+
+	font-size: 10px;
+	font-weight: normal;
 }
 /* Block - adv */
 .adv__inner {
