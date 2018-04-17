@@ -462,15 +462,16 @@ html {
           transform: translate(-50%, -50%);
   display: block;
   content: "";
-  width: 11px;
+  width: 12px;
   height: 18px;
+  background: url(../img/sprite-arrows.png);
 }
 .arrow--prev {
-  background: url(../img/arrow_prev.png);
+  background-position: 0 0;
   left: 45%;
 }
 .arrow--next {
-  background: url(../img/arrow_next.png);
+  background-position-x: -11.5px;
   right: 45%;
 }
 .arrow--prev,

@@ -228,7 +228,6 @@
 	.examples__slider .slick-arrow {
 		top: -120px;
 		left: auto;
-		transform: rotate(90deg);
 	}
 	.examples__slider .slick-next {
 		right: 80px;
@@ -236,17 +235,37 @@
 	.examples__slider .slick-prev {
 		right: 0;
 	}
+	.examples__slider .slick-prev,
+	.examples__slider .slick-next {
+		transition: border-color 400ms;
+	}
 	.examples__slider .arrow {
-		width: 18px;
-		height: 25px;
-		background-size: 15px;
+		width: 20px;
+		height: 18px;
+	}
+	.examples__slider .arrow--prev {
+		background-position-x: -44px;
+	}
+	.examples__slider .arrow--next {
+		background-position: -23px 3px;
+	}
+	.examples__slider .slick-prev:hover .arrow--prev {
+		background-position-x: -85px;
+	}
+	.examples__slider .slick-next:hover .arrow--next {
+		background-position: -65px 3px;
+	}
+	.examples__slider .slick-prev:hover,
+	.examples__slider .slick-next:hover {
+		border-color: #f8401d;
 	}
 	.examples__slider .slick-prev i {
 		left: 50%;
 	}
+
 	.examples__slider .slick-next i {
 		top: 50%;
-		left: 55%;
+		left: 50%;
 	}
 	/* Slick */
 	.slick-arrow {
@@ -461,6 +480,9 @@
 	.icon {
 		width: 35px;
 		height: 35px;
+	}
+	.process .arrow--next {
+		background-position: -13px 0;
 	}
 	/* header */
 	.header__inner {
