@@ -384,8 +384,20 @@
 	.process__text br:first-child {
 		display: none;
 	}
+	
+	.video-slider__slides .slick-slide {
+		flex-wrap: nowrap;
+		margin: 0;
+	}	
 
-	/* TODO - внести блок один в другой, закончить секцию на 1000px*/
+	.video-slider__item,
+	.video-slider__item:nth-child(3),
+	.video-slider__item:nth-child(4) {
+		margin-top: 0;
+		width: 23.76068376068376%;
+		height: 190px;
+	}
+	
 }
 
 @media screen and (min-width: @desktop) {
@@ -611,6 +623,32 @@
 		width: 22px;
 		height: 22px;
 	}
+	.video-slider__slides .slick-dots {
+		display: none!important;
+	}
+	.video-slider__slides .arrow,
+	.video-slider__slides .arrow {
+		width: 14px;
+		height: 20px;
+		background-size: cover;
+	}
+	.video-slider__slides .slick-arrow {
+		top: 70px;
+	}
+	.video-slider__slides .slick-prev {
+		left: -83px;
+	}
+	.video-slider__slides .slick-next {
+		right: -83px;
+	}
+	.video-slider__icon {
+		width: 50px;
+		height: 50px;
+	}
+	.video-slider__icon:after {
+		width: 22px;
+		height: 22px;
+	}
 	/* benefits */
 	.benefits__item {
 		width: 32.22222222222222%;
@@ -716,5 +754,9 @@
 	/* Footer */
 	.footer__social {
 		padding-left: 110px;
+	}
+	.footer__address--phone {
+		margin-top: 20px;
+		font-size: 20px;
 	}
 }
