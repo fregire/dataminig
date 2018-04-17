@@ -261,8 +261,6 @@
         -ms-transform: rotate(90deg);
          -o-transform: rotate(90deg);
             transform: rotate(90deg);
-    width: 50px;
-    height: 50px;
   }
   .examples__slider .slick-next {
     right: 80px;
@@ -284,6 +282,15 @@
   .examples__slider .slick-next i {
     top: 50%;
     left: 55%;
+  }
+  /* Slick */
+  .slick-arrow {
+    width: 50px;
+    height: 50px;
+  }
+  .slick-arrow {
+    border-color: #fff;
+    border-width: 2px;
   }
   /* Product */
   .product__picture {
@@ -448,7 +455,7 @@
        -moz-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-bottom: 107px;
+    margin-bottom: 100px;
   }
   .process__text {
     margin: 0;
@@ -623,15 +630,74 @@
   .process__headline .marked-text {
     color: white;
   }
+  .process__benefits {
+    margin-top: 90px;
+    padding: 0;
+  }
   /* video */
-  .video-slider__slide {
+  .video-slider__player {
+    height: 448px;
+  }
+  .video-slider__slides {
+    margin-top: 42px;
+  }
+  .video-slider__slides .slick-slide {
     -webkit-flex-wrap: nowrap;
         -ms-flex-wrap: nowrap;
             flex-wrap: nowrap;
+    margin: 0;
   }
   .video-slider__item,
   .video-slider__item:nth-child(3),
   .video-slider__item:nth-child(4) {
     margin-top: 0;
+    width: 23.76068376068376%;
+    height: 190px;
+  }
+  .video-slider__slides .slick-dots {
+    display: none;
+  }
+  .video-slider__slides .arrow,
+  .video-slider__slides .arrow {
+    width: 14px;
+    height: 20px;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+  }
+  .video-slider__slides .slick-arrow {
+    top: 70px;
+  }
+  .video-slider__slides .slick-prev {
+    left: -83px;
+  }
+  .video-slider__slides .slick-next {
+    right: -83px;
+  }
+  /* benefits */
+  .benefits__item {
+    width: 32.22222222222222%;
+    height: 309px;
+  }
+  .benefits__top-content {
+    height: 38.83495145631068%;
+  }
+  .benefits__text {
+    margin-top: 84px;
+    font-size: 18px;
+  }
+  .benefits__icon {
+    width: 95px;
+    height: 95px;
+    bottom: -47px;
+  }
+  .benefits__icon:after {
+    height: 50px;
+    width: 50px;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
   }
 }
