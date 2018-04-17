@@ -186,6 +186,7 @@ html {
 }
 .header__phone-number {
   display: none;
+  font-style: normal;
 }
 .header__phone-icon {
   position: relative;
@@ -590,6 +591,7 @@ html {
 }
 .video-slider__item:hover .video-slider__layout {
   opacity: 1;
+  cursor: pointer;
 }
 .video-slider__layout {
   position: absolute;
@@ -911,7 +913,7 @@ html {
   display: block;
   content: "";
   width: 15px;
-  height: 9px;
+  height: 10px;
   background-color: transparent;
   background-position: center center;
   -webkit-background-size: 15px 15px;
