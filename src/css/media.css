@@ -577,6 +577,9 @@
   .process .arrow--next {
     background-position: -13px 0;
   }
+  .link--phone {
+    font-size: 20px;
+  }
   /* header */
   .header__inner {
     height: 116px;
@@ -872,10 +875,22 @@
   }
   /* Footer */
   .footer__social {
-    padding-left: 110px;
+    padding-left: 150px;
+  }
+  .footer__contacts {
+    padding-left: 50px;
   }
   .footer__address--phone {
     margin-top: 20px;
     font-size: 20px;
+  }
+  .footer__icon--phone {
+    width: 20px;
+    height: 20px;
+  }
+  .footer__icon--mail {
+    width: 21px;
+    height: 20px;
+    background-position: 0 0;
   }
 }
