@@ -645,6 +645,9 @@ address {
   max-width: 100%;
   height: 100%;
 }
+.video__link {
+  display: block;
+}
 /* Block - benefits */
 .benefits {
   list-style: none;
@@ -950,6 +953,7 @@ address {
 .video-slider__slide,
 .input,
 .btn,
-.examples__item {
+.examples__item,
+.video__link {
   outline: none;
 }
