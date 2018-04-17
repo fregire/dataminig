@@ -333,10 +333,10 @@ html {
   content: "";
   width: 27px;
   height: 27px;
-  -webkit-background-size: 27px 27px;
-     -moz-background-size: 27px;
-       -o-background-size: 27px;
-          background-size: 27px;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
   background-repeat: no-repeat;
 }
 .icon--prices {

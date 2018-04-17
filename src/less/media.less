@@ -208,14 +208,14 @@
 	.examples .slick-list {
 		overflow: hidden!important;
 	}
-	.examples__item {
+	.examples__item.slick-slide {
 		margin: 14px 0;
-		height: 443px;
+		height: 447px;
 		display: flex!important;
 		padding: 28px 30px;
 		justify-content: space-between;
 		align-items: stretch;
-		background: linear-gradient(45deg, red 0, red 35%, white 35%);
+		background: linear-gradient(45deg, red 0, red 32%, white 32%);
 	}
 	.examples__slider .slick-arrow {
 		top: -120px;
@@ -391,23 +391,34 @@
 	}
 	.page-layout {
 		background-size: cover;
-		background-position: center center;
 	}
 	.headline {
 		font-size: 48px;
 		line-height: 60px;
 	}
-	.btn--main {
+	.btn {
 		font-size: 14px;
-		width: 25%;
-		padding: 18px 25px;
+		height: 46px;
+	}
+	.btn:after {
+		width: 105%;
+		height: 140%;
+		border-radius: 31px;
+		border-width: 2px;
+	}
+	.btn--main {
+		width: 24%;
+		white-space: nowrap;
 	}
 	.btn--main:after {
-		width: 105%;
-		height: 65px;
-		border-radius: 31px;
-
-
+		border-radius: 40px;
+	}
+	.btn--request {
+		width: 280px;
+	}
+	.icon {
+		width: 35px;
+		height: 35px;
 	}
 	/* header */
 	.header__inner {
@@ -449,7 +460,13 @@
 		width: 32.13%;
 	}
 	.adv__text {
+		padding-left: 155px;
 		font-size: 18px;
+	}
+	.adv__icon {
+		width: 74px;
+		height: 74px;
+		left: 45px;
 	}
 	/* examples */
 	.examples__headline {
@@ -459,8 +476,9 @@
 	.examples .slick-arrow {
 		top: -115px;
 	}
-	.examples__item {
-		height: 447px!important;
+	.examples__item.slick-slide {
+		padding: 50px 50px;
+		padding-right: 80px;	
 	}
 	.product__setting {
 		white-space: nowrap;
@@ -473,9 +491,47 @@
 		font-size: 20px;
 		font-weight: 700;
 	}
+	.product__img {
+		max-width: none;
+	}
+	.product__content {
+		padding-left: 40px;
+	}
+	.product__name {
+		padding-top: 40px;
+	}
+	.product__option {
+		margin-top: 45px;
+	}
 	/*request */
+	.request {
+		padding-top: 165px;
+	}
+	.request__text {
+		width: 45%;
+		font-size: 18px;
+		font-weight: normal;
+		line-height: 30px;
+		margin-bottom: 55px;
+	}
+	.request__headline {
+		margin-bottom: 40px;
+	}
+	/* process */
+	.process__header {
+		padding-top: 295px;
+		padding-left: 0;
+		padding-right: 0;
 
-
+	}
+	.process__text {
+		width: 35.32478632478632%;
+		line-height: 36px;
+		font-size: 18px;
+	}
+	.process__headline .marked-text {
+		color: white;
+	}
 	/* video */
 	.video-slider__slide {
 		flex-wrap: nowrap;
