@@ -553,18 +553,18 @@ address {
   padding: 0 10px;
   margin-top: 80px;
 }
-/* Block - video-slider */
-.video-slider__player {
+/* Block - gallery-slider */
+.gallery-slider__player {
   width: 100%;
   height: 167px;
   background: #000;
 }
-.video-slider__slides {
+.gallery-slider__slides {
   position: relative;
   padding-bottom: 70px;
   margin-top: 14px;
 }
-.video-slider__slides .slick-slide {
+.gallery-slider__slides .slick-slide {
   display: -webkit-box!important;
   display: -webkit-flex!important;
   display: -moz-box!important;
@@ -572,7 +572,7 @@ address {
   display: flex!important;
   margin: 0 10px;
 }
-.video-slider__slide {
+.gallery-slider__slide {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -588,21 +588,21 @@ address {
           justify-content: space-between;
   margin-top: 16px;
 }
-.video-slider__item {
+.gallery-slider__item {
   position: relative;
   width: 46.66666666666667%;
   height: 96px;
   display: inline-block;
 }
-.video-slider__item:nth-child(3),
-.video-slider__item:nth-child(4) {
+.gallery-slider__item:nth-child(3),
+.gallery-slider__item:nth-child(4) {
   margin-top: 18px;
 }
-.video-slider__item:hover .video-slider__layout {
+.gallery-slider__item:hover .gallery-slider__layout {
   opacity: 1;
   cursor: pointer;
 }
-.video-slider__layout {
+.gallery-slider__layout {
   position: absolute;
   top: 0;
   left: 0;
@@ -615,7 +615,7 @@ address {
   transition: opacity 400ms;
   background: rgba(248, 64, 29, 0.75);
 }
-.video-slider__icon {
+.gallery-slider__icon {
   width: 35px;
   height: 35px;
   -webkit-border-radius: 50%;
@@ -623,13 +623,13 @@ address {
           border-radius: 50%;
   background: #fff;
 }
-.video-slider__icon:after {
+.gallery-slider__icon:after {
   width: 15px;
   height: 15px;
   background: url(../img/search-icon.svg) no-repeat;
 }
-.video-slider__icon,
-.video-slider__icon:after {
+.gallery-slider__icon,
+.gallery-slider__icon:after {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -641,7 +641,7 @@ address {
   display: block;
   content: "";
 }
-.video-slider__preview {
+.gallery-slider__preview {
   max-width: 100%;
   height: 100%;
 }
@@ -950,7 +950,7 @@ address {
   border-top: 1px solid #343438;
 }
 /* Outline put away */
-.video-slider__slide,
+.gallery-slider__slide,
 .input,
 .btn,
 .examples__item,
