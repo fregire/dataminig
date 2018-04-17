@@ -6,6 +6,9 @@ var server = require("browser-sync").create();
 var plumber = require("gulp-plumber");
 var imagemin = require("gulp-imagemin");
 var concat = require("gulp-concat");
+var minifycss = require("gulp-csso");
+var rename = require("gulp-rename");
+var run = require("run-sequence");
 
 gulp.task("styles", function() {
 	return gulp.src(["src/less/**/*.less", "!src/less/**/variables.less"])
@@ -40,5 +43,14 @@ gulp.task("server", ["styles"], function() {
 	gulp.watch("src/*.html")
 		.on("change", server.reload);	
 });
+
+gulp.task("minifycss", function() {
+	return gulp.src("src/css/**/*.css")
+		.pipe(minifycss())
+		.pipe(rename({suffix: ".min"}))
+		.pipe(gulp.dest("dist/css"));
+});
+
+
 
 
