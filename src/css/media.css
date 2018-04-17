@@ -503,7 +503,7 @@
     height: 190px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1300px) {
   .slick-prev,
   .header__inner,
   .main__inner,
@@ -560,7 +560,7 @@
   .input {
     height: auto;
     width: 100%;
-    padding: 0 30px;
+    padding: 10px 30px;
     height: 50px;
   }
   .input--textarea {
