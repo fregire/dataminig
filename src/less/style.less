@@ -6,6 +6,9 @@ html {
 	width: 100%;
 	overflow-x: hidden;
 }
+address {
+	display: block;
+}
 .montserratFont(){
 	font-family: "Monseratt", "Arial", sans-serif;
 }
@@ -41,9 +44,6 @@ html {
 	background-color: rgba(255, 255, 255, 0.169);
 	border: 1px solid #b0b4ba;
 	border-radius: 20px;
-
-
-
 }
 
 .input--textarea {
@@ -149,7 +149,7 @@ html {
 	top: 0;
 	left: 0;
 
-	height: calc(100% - 324px);
+	height: calc(100% - 200px);
 	width: 100%;
 
 	background-image: url(../img/mainBG.jpg);
@@ -831,4 +831,13 @@ html {
 	color: #6f6f74;
 
 	border-top: 1px solid #343438;
+}
+
+
+/* Outline put away */
+.video-slider__slide,
+.input,
+.btn,
+.examples__item {
+	outline: none;
 }

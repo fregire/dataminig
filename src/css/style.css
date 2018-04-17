@@ -7,6 +7,9 @@ html {
   width: 100%;
   overflow-x: hidden;
 }
+address {
+  display: block;
+}
 .link {
   color: #fff;
   text-decoration: none;
@@ -143,9 +146,9 @@ html {
   position: absolute;
   top: 0;
   left: 0;
-  height: -webkit-calc(100% - 324px);
-  height: -moz-calc(100% - 324px);
-  height: calc(100% - 324px);
+  height: -webkit-calc(100% - 200px);
+  height: -moz-calc(100% - 200px);
+  height: calc(100% - 200px);
   width: 100%;
   background-image: url(../img/mainBG.jpg);
   background-repeat: no-repeat;
@@ -939,4 +942,11 @@ html {
   font-size: 14px;
   color: #6f6f74;
   border-top: 1px solid #343438;
+}
+/* Outline put away */
+.video-slider__slide,
+.input,
+.btn,
+.examples__item {
+  outline: none;
 }
