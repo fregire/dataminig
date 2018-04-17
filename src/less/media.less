@@ -2,7 +2,7 @@
 @largePhones: 480px;
 @tablets: 750px;
 @laptop: 1000px;
-@desktop: 1200px;
+@desktop: 1280px;
 
 
 @media (min-width: @largePhones) {
@@ -356,7 +356,8 @@
 	.process__inner,
 	.feedback__inner,
 	.footer__inner,
-	.examples__slider  {
+	.examples__slider,
+	.arrange  {
 		max-width: 950px;
 		margin: 0 auto;
 	}
@@ -398,6 +399,7 @@
 	}
 	.page-layout {
 		background-size: cover;
+		background-position: center 0;
 	}
 	.headline {
 		font-size: 48px;
@@ -589,6 +591,14 @@
 	}
 	.video-slider__slides .slick-next {
 		right: -83px;
+	}
+	.video-slider__icon {
+		width: 50px;
+		height: 50px;
+	}
+	.video-slider__icon:after {
+		width: 22px;
+		height: 22px;
 	}
 	/* benefits */
 	.benefits__item {

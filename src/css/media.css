@@ -432,7 +432,8 @@
   .process__inner,
   .feedback__inner,
   .footer__inner,
-  .examples__slider {
+  .examples__slider,
+  .arrange {
     max-width: 950px;
     margin: 0 auto;
   }
@@ -466,7 +467,7 @@
   }
   /* TODO - внести блок один в другой, закончить секцию на 1000px*/
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .slick-prev,
   .header__inner,
   .main__inner,
@@ -487,6 +488,7 @@
        -moz-background-size: cover;
          -o-background-size: cover;
             background-size: cover;
+    background-position: center 0;
   }
   .headline {
     font-size: 48px;
@@ -684,6 +686,14 @@
   }
   .video-slider__slides .slick-next {
     right: -83px;
+  }
+  .video-slider__icon {
+    width: 50px;
+    height: 50px;
+  }
+  .video-slider__icon:after {
+    width: 22px;
+    height: 22px;
   }
   /* benefits */
   .benefits__item {
