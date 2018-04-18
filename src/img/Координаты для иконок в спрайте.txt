@@ -1,0 +1,11 @@
+Красный телефон для desktop:
+width: 20px; height: 20px;
+background-position: 0 0;
+
+Белый телефон для мобильных в шапке:
+width: 12px; height: 12px;
+background-position: 0 23px;
+
+Красный телефон для мобильных в футере:
+width: 15px; height: 15px;
+background-position: 0 38px;
