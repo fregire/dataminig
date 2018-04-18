@@ -650,7 +650,7 @@ address {
 }
 /* Block - benefits */
 .benefits {
-  list-style: none;
+  list-style-type: none;
   margin-left: 0;
   color: #000;
   text-align: center;
@@ -698,7 +698,7 @@ address {
   -webkit-box-shadow: 0px 15px 43px 0px rgba(14, 17, 29, 0.21);
      -moz-box-shadow: 0px 15px 43px 0px rgba(14, 17, 29, 0.21);
           box-shadow: 0px 15px 43px 0px rgba(14, 17, 29, 0.21);
-  background: #fff;
+  background-color: #fff;
 }
 .benefits__icon:after {
   position: absolute;
