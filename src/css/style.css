@@ -155,13 +155,11 @@ address {
   height: -moz-calc(100% - 200px);
   height: calc(100% - 200px);
   width: 100%;
-  background-image: url(../img/mainBG.jpg);
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-     -moz-background-size: cover;
-       -o-background-size: cover;
-          background-size: cover;
-  background-position: 70% 0, 0 0;
+  overflow: hidden;
+}
+.page-layout__bg {
+  width: 100%;
+  height: auto;
 }
 /* Header block */
 .header {

@@ -6,9 +6,10 @@
 
 
 @media (min-width: @largePhones) {
-	.page-layout {
-		background-image: url(../img/mainBG-desktop.jpg);
-		background-size: contain;
+	.page-layout {	
+		width: 1050px;
+		left: 50%;
+		transform: translate(-50%, 0);
 	}
 	.input {
 		height: 45px;
@@ -97,10 +98,6 @@
 }
 
 @media (min-width: @tablets) {
-	.page-layout {
-		background-size: cover;
-		background-position: center 0;
-	}
 	.btn--main {
 		width: 250px;
 	}
@@ -162,7 +159,7 @@
 		overflow-x: visible;
 	}
 	.page-layout {
-		background-size: cover;
+		width: 1900px;
 	}
 	.headline {
 		font-size: 30px;
@@ -434,10 +431,6 @@
 		max-width: 1170px;
 		margin: 0 auto;
 		padding: 0;
-	}
-	.page-layout {
-		background-size: cover;
-		background-position: center 0;
 	}
 	.headline {
 		font-size: 48px;
@@ -798,4 +791,15 @@
 
 	}
 
+}
+@media (min-width: 1890px) {
+	.page-layout {
+		width: 100%;
+	}
+}
+
+@media (min-width: 2800px) {
+	.page-layout {
+		width: 5000px;
+	}
 }

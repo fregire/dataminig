@@ -1,10 +1,12 @@
 @media (min-width: 480px) {
   .page-layout {
-    background-image: url(../img/mainBG-desktop.jpg);
-    -webkit-background-size: contain;
-       -moz-background-size: contain;
-         -o-background-size: contain;
-            background-size: contain;
+    width: 1050px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+       -moz-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+         -o-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
   }
   .input {
     height: 45px;
@@ -95,13 +97,6 @@
   }
 }
 @media (min-width: 750px) {
-  .page-layout {
-    -webkit-background-size: cover;
-       -moz-background-size: cover;
-         -o-background-size: cover;
-            background-size: cover;
-    background-position: center 0;
-  }
   .btn--main {
     width: 250px;
   }
@@ -171,10 +166,7 @@
     overflow-x: visible;
   }
   .page-layout {
-    -webkit-background-size: cover;
-       -moz-background-size: cover;
-         -o-background-size: cover;
-            background-size: cover;
+    width: 1900px;
   }
   .headline {
     font-size: 30px;
@@ -518,13 +510,6 @@
     max-width: 1170px;
     margin: 0 auto;
     padding: 0;
-  }
-  .page-layout {
-    -webkit-background-size: cover;
-       -moz-background-size: cover;
-         -o-background-size: cover;
-            background-size: cover;
-    background-position: center 0;
   }
   .headline {
     font-size: 48px;
@@ -892,5 +877,15 @@
     width: 21px;
     height: 20px;
     background-position: 0 0;
+  }
+}
+@media (min-width: 1890px) {
+  .page-layout {
+    width: 100%;
+  }
+}
+@media (min-width: 2800px) {
+  .page-layout {
+    width: 5000px;
   }
 }

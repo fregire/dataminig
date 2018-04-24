@@ -21,7 +21,11 @@
 </head>
 <body class="page">
 	<div class="page-layout">
-		<div class="page-layout__header"></div>
+		<picture>
+			<source media="(min-width: 2800px)" srcset="img/mainBG_5k.png">
+			<source media="(min-width: 480px)" srcset="img/mainBG-desktop.jpg">
+			<img class="page-layout__bg" src="img/mainBG.jpg" alt="Фон страницы">
+		</picture>
 	</div>
 	<header class="header">
 		<div class="header__inner">
