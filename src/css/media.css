@@ -884,7 +884,7 @@
     width: 100%;
   }
 }
-@media (min-width: 2800px) {
+@media (min-width: 2400px) {
   .page-layout {
     width: 5000px;
   }
