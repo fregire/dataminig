@@ -894,3 +894,11 @@
     width: 100%;
   }
 }
+@media (min-resolution: 144pi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx) {
+  .arrange__number {
+    background-image: url(../img/circles2x.png);
+  }
+  .benefits__top-content {
+    background-image: url(../img/benefits-bg2x.jpg);
+  }
+}

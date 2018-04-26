@@ -147,6 +147,7 @@ address {
 	overflow-x: hidden;
 	background-color: #141f34;
 	background: linear-gradient(to bottom, #141f34, #141f34);
+	z-index: -3;
 }
 .page-layout {
 	z-index: -1;
@@ -161,6 +162,15 @@ address {
 }
 .page-layout__bg {
 	width: 100%;
+	height: auto;
+}
+.page-layout__city {
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: -2;
+
+	width: 58%;
 	height: auto;
 }
 /* Header block */
