@@ -30,6 +30,15 @@ gulp.task("svg", function() {
 		.pipe(gulp.dest("src/img"));
 });
 
+gulp.task("img", function() {
+	return gulp.src("src/img/**/*.{png,jpg,jpeg}")
+		.pipe(imagemin([
+			imagemin.optipng({optimizationLevel: 3}),
+			imagemin.jpegtran({progressive: true})
+		]))
+		.pipe(gulp.dest("src/img"));
+});
+
 gulp.task("jslibs", function() {
 	return gulp.src("src/js/**/*.min.js")
 		.pipe(concat("libs.js"))
